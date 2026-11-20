@@ -4,23 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10131b">
-  <meta name="description" content="اكتشف ألعاباً مجانية وقانونية وحمّلها من مصادرها الرسمية بسهولة.">
+  <meta name="description" content="اكتشف ألعاب كمبيوتر وأندرويد مجانية وقانونية، وحمّلها من مصادرها الرسمية.">
   <title>لعبة | اكتشف ألعابك القادمة</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#" aria-label="الرئيسية"><span class="brand-mark">ل</span><span>لعبة<span class="brand-dot">.</span></span></a>
-      <nav class="main-nav" aria-label="القائمة الرئيسية">
-        <a href="#games">الألعاب</a>
-        <a href="#categories">التصنيفات</a>
-        <a href="#about">عن الموقع</a>
+      <a class="brand" href="#" aria-label="GameHub home"><span class="brand-mark">ل</span><span>لعبة<span class="brand-dot">.</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#games" data-ar="الألعاب" data-en="Games">الألعاب</a>
+        <a href="#categories" data-ar="التصنيفات" data-en="Categories">التصنيفات</a>
+        <a href="#about" data-ar="عن الموقع" data-en="About">عن الموقع</a>
       </nav>
-      <a class="nav-cta" href="#games">اكتشف الألعاب <span>←</span></a>
+      <div class="nav-actions">
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">English</button>
+        <a class="nav-cta" href="#games"><span data-ar="اكتشف الألعاب" data-en="Explore games">اكتشف الألعاب</span> <span>←</span></a>
+      </div>
     </div>
   </header>
 
@@ -28,70 +31,89 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow"><span class="pulse"></span> عالم من الألعاب المجانية</span>
-          <h1>اللعبة القادمة<br><span>تبدأ من هنا.</span></h1>
-          <p>اكتشف ألعاباً ممتعة ومجانية، تعرّف على تفاصيلها، وانتقل إلى مصدرها الرسمي للتحميل بأمان.</p>
+          <span class="eyebrow"><span class="pulse"></span><span data-ar="عالم من الألعاب المجانية" data-en="A world of free games">عالم من الألعاب المجانية</span></span>
+          <h1 data-ar="اللعبة القادمة<br><span>تبدأ من هنا.</span>" data-en="Your next game<br><span>starts here.</span>">اللعبة القادمة<br><span>تبدأ من هنا.</span></h1>
+          <p data-ar="اكتشف ألعاباً ممتعة للكمبيوتر والهاتف، تعرّف على تفاصيلها، وانتقل إلى مصدرها الرسمي للتحميل بأمان." data-en="Discover great games for PC and mobile, explore their details, and get them safely from official sources.">اكتشف ألعاباً ممتعة للكمبيوتر والهاتف، تعرّف على تفاصيلها، وانتقل إلى مصدرها الرسمي للتحميل بأمان.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#games">تصفح الألعاب <span>←</span></a>
-            <a class="text-link" href="#about">اعرف المزيد</a>
+            <a class="button button-primary" href="#games"><span data-ar="تصفح الألعاب" data-en="Browse games">تصفح الألعاب</span> <span>←</span></a>
+            <a class="text-link" href="#about" data-ar="اعرف المزيد" data-en="Learn more">اعرف المزيد</a>
           </div>
-          <div class="hero-note"><span class="check-icon">✓</span> روابط رسمية — لا نعيد توزيع ملفات الألعاب</div>
+          <div class="hero-note"><span class="check-icon">✓</span><span data-ar="روابط رسمية وملفات نملك حق توزيعها فقط" data-en="Official links and files we are allowed to distribute">روابط رسمية وملفات نملك حق توزيعها فقط</span></div>
         </div>
-        <div class="hero-art" aria-label="رسم زخرفي لألعاب الفيديو">
+        <div class="hero-art" aria-label="Gaming artwork">
           <div class="art-glow"></div>
           <div class="art-card art-card-back"><span>PLAY</span><b>YOUR<br>WORLD</b></div>
           <div class="art-card art-card-front"><span class="controller">⌘</span><b>GAME<br>ON<span>.</span></b><small>DISCOVER • PLAY • REPEAT</small></div>
-          <span class="float-chip chip-one">✦ ألعاب مجانية</span>
-          <span class="float-chip chip-two">مغامرتك تبدأ الآن</span>
+          <span class="float-chip chip-one" data-ar="✦ ألعاب مجانية" data-en="✦ Free games">✦ ألعاب مجانية</span>
+          <span class="float-chip chip-two" data-ar="مغامرتك تبدأ الآن" data-en="Your adventure starts now">مغامرتك تبدأ الآن</span>
         </div>
       </div>
+    </section>
+
+    <section class="container ad-slot" aria-label="Advertisement area">
+      <span data-ar="مساحة إعلانية" data-en="Advertisement space">مساحة إعلانية</span>
+      <small data-ar="ستُفعّل الإعلانات بعد تجهيز الموقع وقبوله لدى شبكة إعلانية." data-en="Ads will be enabled after the site is ready and approved by an ad network.">ستُفعّل الإعلانات بعد تجهيز الموقع وقبوله لدى شبكة إعلانية.</small>
     </section>
 
     <section class="container search-section" id="games">
       <div class="section-heading">
-        <div><span class="eyebrow">مكتبة الألعاب</span><h2>اختر لعبتك</h2></div>
-        <span class="result-count" id="resultCount">5 ألعاب</span>
+        <div><span class="eyebrow" data-ar="مكتبة الألعاب" data-en="GAME LIBRARY">مكتبة الألعاب</span><h2 data-ar="اختر لعبتك" data-en="Choose your game">اختر لعبتك</h2></div>
+        <span class="result-count" id="resultCount">8 ألعاب</span>
       </div>
       <div class="toolbar">
-        <label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="ابحث عن لعبة..." autocomplete="off"></label>
-        <div class="filters" id="categories" aria-label="تصفية حسب التصنيف">
-          <button class="filter active" data-category="all">الكل</button>
-          <button class="filter" data-category="racing">سباق</button>
-          <button class="filter" data-category="strategy">استراتيجية</button>
-          <button class="filter" data-category="adventure">مغامرات</button>
+        <label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="ابحث عن لعبة..." data-ar-placeholder="ابحث عن لعبة..." data-en-placeholder="Search games..." autocomplete="off"></label>
+        <div class="filters" id="categories" aria-label="Filter by category">
+          <button class="filter active" data-category="all" data-ar="الكل" data-en="All">الكل</button>
+          <button class="filter" data-category="racing" data-ar="سباق" data-en="Racing">سباق</button>
+          <button class="filter" data-category="strategy" data-ar="استراتيجية" data-en="Strategy">استراتيجية</button>
+          <button class="filter" data-category="adventure" data-ar="مغامرات" data-en="Adventure">مغامرات</button>
+          <button class="filter" data-category="simulation" data-ar="محاكاة" data-en="Simulation">محاكاة</button>
         </div>
       </div>
+
       <div class="games-grid" id="gamesGrid">
         <article class="game-card" data-name="supertuxkart سوبر تاكس كارت" data-category="racing">
-          <div class="game-cover cover-racing"><span class="cover-symbol">🏎️</span><span class="cover-tag">سباق</span><span class="cover-title">SUPER<br>TUX KART</span></div>
-          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>SuperTuxKart</h3><p>سباقات كارت ممتعة برسومات ملونة ومنافسات سريعة.</p><a class="download-link" href="https://supertuxkart.net/Download" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+          <div class="game-cover cover-racing"><span class="cover-symbol">🏎️</span><span class="cover-tag" data-ar="سباق" data-en="Racing">سباق</span><span class="cover-title">SUPER<br>TUX KART</span></div>
+          <div class="game-info"><div class="game-meta"><span data-ar="كمبيوتر وهاتف" data-en="PC & Android">كمبيوتر وهاتف</span><span data-ar="مفتوحة المصدر" data-en="Open source">مفتوحة المصدر</span></div><h3>SuperTuxKart</h3><p data-ar="سباقات كارت ممتعة برسومات ملونة ومنافسات سريعة." data-en="Fun kart racing with colorful tracks and fast competitions.">سباقات كارت ممتعة برسومات ملونة ومنافسات سريعة.</p><a class="download-link" href="https://supertuxkart.net/Download" target="_blank" rel="noopener noreferrer"><span data-ar="الموقع الرسمي للتحميل" data-en="Official downloads">الموقع الرسمي للتحميل</span> <span>↗</span></a></div>
         </article>
         <article class="game-card" data-name="0 a d zero ad زيرو اي دي" data-category="strategy">
-          <div class="game-cover cover-strategy"><span class="cover-symbol">🏛️</span><span class="cover-tag">استراتيجية</span><span class="cover-title">0 A.D.<br>EMPIRES</span></div>
-          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>0 A.D.</h3><p>ابنِ حضارتك وأدر مواردك وخض معارك تاريخية.</p><a class="download-link" href="https://play0ad.com/download/" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+          <div class="game-cover cover-strategy"><span class="cover-symbol">🏛️</span><span class="cover-tag" data-ar="استراتيجية" data-en="Strategy">استراتيجية</span><span class="cover-title">0 A.D.<br>EMPIRES</span></div>
+          <div class="game-info"><div class="game-meta"><span data-ar="كمبيوتر" data-en="PC">كمبيوتر</span><span data-ar="مفتوحة المصدر" data-en="Open source">مفتوحة المصدر</span></div><h3>0 A.D.</h3><p data-ar="ابنِ حضارتك وأدر مواردك وخض معارك تاريخية." data-en="Build a civilization, manage resources, and fight historical battles.">ابنِ حضارتك وأدر مواردك وخض معارك تاريخية.</p><a class="download-link" href="https://play0ad.com/download/" target="_blank" rel="noopener noreferrer"><span data-ar="الموقع الرسمي للتحميل" data-en="Official downloads">الموقع الرسمي للتحميل</span> <span>↗</span></a></div>
         </article>
-        <article class="game-card" data-name="openttd open ttd قطارات" data-category="strategy">
-          <div class="game-cover cover-train"><span class="cover-symbol">🚆</span><span class="cover-tag">محاكاة</span><span class="cover-title">OPEN<br>TTD</span></div>
-          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>OpenTTD</h3><p>صمّم شبكة نقل وقطارات ووسّع شركتك عبر المدن.</p><a class="download-link" href="https://www.openttd.org/downloads/openttd-releases/latest.html" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+        <article class="game-card" data-name="openttd open ttd قطارات" data-category="simulation">
+          <div class="game-cover cover-train"><span class="cover-symbol">🚆</span><span class="cover-tag" data-ar="محاكاة" data-en="Simulation">محاكاة</span><span class="cover-title">OPEN<br>TTD</span></div>
+          <div class="game-info"><div class="game-meta"><span data-ar="كمبيوتر" data-en="PC">كمبيوتر</span><span data-ar="مفتوحة المصدر" data-en="Open source">مفتوحة المصدر</span></div><h3>OpenTTD</h3><p data-ar="صمّم شبكة نقل وقطارات ووسّع شركتك عبر المدن." data-en="Build transport networks and grow your company across cities.">صمّم شبكة نقل وقطارات ووسّع شركتك عبر المدن.</p><a class="download-link" href="https://www.openttd.org/downloads/openttd-releases/latest.html" target="_blank" rel="noopener noreferrer"><span data-ar="الموقع الرسمي للتحميل" data-en="Official downloads">الموقع الرسمي للتحميل</span> <span>↗</span></a></div>
         </article>
         <article class="game-card" data-name="luanti minetest لووانتي" data-category="adventure">
-          <div class="game-cover cover-blocks"><span class="cover-symbol">🧱</span><span class="cover-tag">مغامرات</span><span class="cover-title">LUANTI<br>WORLDS</span></div>
-          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>Luanti</h3><p>استكشف عوالم مفتوحة وابنِ وابتكر مع مجتمع اللاعبين.</p><a class="download-link" href="https://www.luanti.org/downloads/" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+          <div class="game-cover cover-blocks"><span class="cover-symbol">🧱</span><span class="cover-tag" data-ar="مغامرات" data-en="Adventure">مغامرات</span><span class="cover-title">LUANTI<br>WORLDS</span></div>
+          <div class="game-info"><div class="game-meta"><span data-ar="كمبيوتر وهاتف" data-en="PC & Android">كمبيوتر وهاتف</span><span data-ar="مفتوحة المصدر" data-en="Open source">مفتوحة المصدر</span></div><h3>Luanti</h3><p data-ar="استكشف عوالم مفتوحة وابنِ وابتكر مع مجتمع اللاعبين." data-en="Explore open worlds, build, and create with the player community.">استكشف عوالم مفتوحة وابنِ وابتكر مع مجتمع اللاعبين.</p><a class="download-link" href="https://www.luanti.org/downloads/" target="_blank" rel="noopener noreferrer"><span data-ar="الموقع الرسمي للتحميل" data-en="Official downloads">الموقع الرسمي للتحميل</span> <span>↗</span></a></div>
         </article>
         <article class="game-card" data-name="battle for wesnoth wesnoth ويسنوث" data-category="strategy">
-          <div class="game-cover cover-fantasy"><span class="cover-symbol">🐉</span><span class="cover-tag">استراتيجية</span><span class="cover-title">BATTLE FOR<br>WESNOTH</span></div>
-          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>The Battle for Wesnoth</h3><p>استراتيجية خيالية بأبطال وجيوش وحملات متنوعة.</p><a class="download-link" href="https://www.wesnoth.org/downloads/" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+          <div class="game-cover cover-fantasy"><span class="cover-symbol">🐉</span><span class="cover-tag" data-ar="استراتيجية" data-en="Strategy">استراتيجية</span><span class="cover-title">BATTLE FOR<br>WESNOTH</span></div>
+          <div class="game-info"><div class="game-meta"><span data-ar="كمبيوتر" data-en="PC">كمبيوتر</span><span data-ar="مفتوحة المصدر" data-en="Open source">مفتوحة المصدر</span></div><h3>The Battle for Wesnoth</h3><p data-ar="استراتيجية خيالية بأبطال وجيوش وحملات متنوعة." data-en="A fantasy strategy game with heroes, armies, and campaigns.">استراتيجية خيالية بأبطال وجيوش وحملات متنوعة.</p><a class="download-link" href="https://www.wesnoth.org/downloads/" target="_blank" rel="noopener noreferrer"><span data-ar="الموقع الرسمي للتحميل" data-en="Official downloads">الموقع الرسمي للتحميل</span> <span>↗</span></a></div>
+        </article>
+        <article class="game-card" data-name="mindustry مايندستري" data-category="strategy">
+          <div class="game-cover cover-strategy"><span class="cover-symbol">⚙️</span><span class="cover-tag" data-ar="استراتيجية" data-en="Strategy">استراتيجية</span><span class="cover-title">MIND<br>USTRY</span></div>
+          <div class="game-info"><div class="game-meta"><span data-ar="كمبيوتر وهاتف" data-en="PC & Android">كمبيوتر وهاتف</span><span data-ar="مفتوحة المصدر" data-en="Open source">مفتوحة المصدر</span></div><h3>Mindustry</h3><p data-ar="ابنِ خطوط إنتاج ودافع عن قاعدتك في لعبة استراتيجية." data-en="Build production lines and defend your base in this strategy game.">ابنِ خطوط إنتاج ودافع عن قاعدتك في لعبة استراتيجية.</p><a class="download-link" href="https://github.com/Anuken/Mindustry/releases" target="_blank" rel="noopener noreferrer"><span data-ar="صفحة الإصدارات الرسمية" data-en="Official releases">صفحة الإصدارات الرسمية</span> <span>↗</span></a></div>
+        </article>
+        <article class="game-card" data-name="shattered pixel dungeon بيكسل دانجن" data-category="adventure">
+          <div class="game-cover cover-fantasy"><span class="cover-symbol">🗝️</span><span class="cover-tag" data-ar="مغامرات" data-en="Adventure">مغامرات</span><span class="cover-title">PIXEL<br>DUNGEON</span></div>
+          <div class="game-info"><div class="game-meta"><span data-ar="هاتف Android" data-en="Android">هاتف Android</span><span data-ar="مفتوحة المصدر" data-en="Open source">مفتوحة المصدر</span></div><h3>Shattered Pixel Dungeon</h3><p data-ar="مغامرة تقمص أدوار داخل زنزانات تتغير في كل مرة." data-en="A roguelike role-playing adventure with changing dungeons.">مغامرة تقمص أدوار داخل زنزانات تتغير في كل مرة.</p><a class="download-link" href="https://github.com/00-Evan/shattered-pixel-dungeon/releases" target="_blank" rel="noopener noreferrer"><span data-ar="صفحة الإصدارات الرسمية" data-en="Official releases">صفحة الإصدارات الرسمية</span> <span>↗</span></a></div>
+        </article>
+        <article class="game-card" data-name="mindustry android مايندستري" data-category="simulation">
+          <div class="game-cover cover-blocks"><span class="cover-symbol">📱</span><span class="cover-tag" data-ar="هاتف" data-en="Mobile">هاتف</span><span class="cover-title">MOBILE<br>GAMES</span></div>
+          <div class="game-info"><div class="game-meta"><span data-ar="Android" data-en="Android">Android</span><span data-ar="ملفات رسمية" data-en="Official files">ملفات رسمية</span></div><h3 data-ar="مصادر ألعاب Android" data-en="Android game sources">مصادر ألعاب Android</h3><p data-ar="سنضيف هنا ملفات APK التي يسمح أصحابها بإعادة توزيعها، مع توضيح الترخيص والإصدار." data-en="We will add APK files that their owners permit us to redistribute, with license and version details.">سنضيف هنا ملفات APK التي يسمح أصحابها بإعادة توزيعها، مع توضيح الترخيص والإصدار.</p><a class="download-link" href="https://f-droid.org/" target="_blank" rel="noopener noreferrer"><span data-ar="استكشف F-Droid" data-en="Explore F-Droid">استكشف F-Droid</span> <span>↗</span></a></div>
         </article>
       </div>
-      <div class="empty-state" id="emptyState" hidden>لم نعثر على ألعاب مطابقة. جرّب كلمة أخرى.</div>
+      <div class="empty-state" id="emptyState" hidden data-ar="لم نعثر على ألعاب مطابقة. جرّب كلمة أخرى." data-en="No matching games found. Try another search.">لم نعثر على ألعاب مطابقة. جرّب كلمة أخرى.</div>
     </section>
 
     <section class="container about-section" id="about">
-      <div class="about-card"><span class="about-icon">✦</span><div><h2>اللعب أسهل عندما يكون آمناً.</h2><p>نساعدك على اكتشاف ألعاب مجانية، ونوجّهك إلى مواقع المطورين الرسمية للحصول على الملفات والتحديثات الأصلية.</p></div><a href="privacy.html">سياسة الخصوصية <span>←</span></a></div>
+      <div class="about-card"><span class="about-icon">✦</span><div><h2 data-ar="اللعب أسهل عندما يكون آمناً." data-en="Gaming is better when it is safe.">اللعب أسهل عندما يكون آمناً.</h2><p data-ar="نساعدك على اكتشاف ألعاب مجانية، ونوجّهك إلى مواقع المطورين الرسمية. وقد نوفر ملفات تثبيت فقط عندما يسمح الترخيص بإعادة توزيعها." data-en="We help you discover free games and find official developer pages. We only host installers when their licenses allow redistribution.">نساعدك على اكتشاف ألعاب مجانية، ونوجّهك إلى مواقع المطورين الرسمية. وقد نوفر ملفات تثبيت فقط عندما يسمح الترخيص بإعادة توزيعها.</p></div><a href="privacy.html"><span data-ar="سياسة الخصوصية" data-en="Privacy policy">سياسة الخصوصية</span> <span>←</span></a></div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#"><span class="brand-mark">ل</span><span>لعبة<span class="brand-dot">.</span></span></a><p>© <span id="year"></span> لعبة. جميع الحقوق محفوظة.</p><a href="privacy.html">الخصوصية</a></div><div class="container footer-disclaimer">أسماء الألعاب وعلاماتها التجارية تعود إلى أصحابها. روابط التحميل تقود إلى المواقع الرسمية للمطورين.</div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#"><span class="brand-mark">ل</span><span>لعبة<span class="brand-dot">.</span></span></a><p>© <span id="year"></span> <span data-ar="لعبة. جميع الحقوق محفوظة." data-en="GameHub. All rights reserved.">لعبة. جميع الحقوق محفوظة.</span></p><a href="privacy.html" data-ar="الخصوصية" data-en="Privacy">الخصوصية</a></div><div class="container footer-disclaimer" data-ar="أسماء الألعاب وعلاماتها التجارية تعود إلى أصحابها. لا نرفع أو نوزع ملفات إلا إذا كان الترخيص يسمح بذلك." data-en="Game names and trademarks belong to their respective owners. We only host or distribute files when their licenses permit it.">أسماء الألعاب وعلاماتها التجارية تعود إلى أصحابها. لا نرفع أو نوزع ملفات إلا إذا كان الترخيص يسمح بذلك.</div></footer>
   <script src="script.js"></script>
 </body>
 </html>
