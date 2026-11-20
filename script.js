@@ -27,6 +27,7 @@ function setLanguage(nextLanguage) {
   const isArabic = language === "ar";
   document.documentElement.lang = language;
   document.documentElement.dir = isArabic ? "rtl" : "ltr";
+  document.title = isArabic ? "لعبة | اكتشف ألعابك القادمة" : "GameHub | Discover your next game";
   document.querySelectorAll("[data-ar][data-en]").forEach((element) => {
     element.innerHTML = element.dataset[language];
   });
