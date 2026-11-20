@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131b">
+  <meta name="description" content="اكتشف ألعاباً مجانية وقانونية وحمّلها من مصادرها الرسمية بسهولة.">
+  <title>لعبة | اكتشف ألعابك القادمة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="الرئيسية"><span class="brand-mark">ل</span><span>لعبة<span class="brand-dot">.</span></span></a>
+      <nav class="main-nav" aria-label="القائمة الرئيسية">
+        <a href="#games">الألعاب</a>
+        <a href="#categories">التصنيفات</a>
+        <a href="#about">عن الموقع</a>
+      </nav>
+      <a class="nav-cta" href="#games">اكتشف الألعاب <span>←</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="pulse"></span> عالم من الألعاب المجانية</span>
+          <h1>اللعبة القادمة<br><span>تبدأ من هنا.</span></h1>
+          <p>اكتشف ألعاباً ممتعة ومجانية، تعرّف على تفاصيلها، وانتقل إلى مصدرها الرسمي للتحميل بأمان.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#games">تصفح الألعاب <span>←</span></a>
+            <a class="text-link" href="#about">اعرف المزيد</a>
+          </div>
+          <div class="hero-note"><span class="check-icon">✓</span> روابط رسمية — لا نعيد توزيع ملفات الألعاب</div>
+        </div>
+        <div class="hero-art" aria-label="رسم زخرفي لألعاب الفيديو">
+          <div class="art-glow"></div>
+          <div class="art-card art-card-back"><span>PLAY</span><b>YOUR<br>WORLD</b></div>
+          <div class="art-card art-card-front"><span class="controller">⌘</span><b>GAME<br>ON<span>.</span></b><small>DISCOVER • PLAY • REPEAT</small></div>
+          <span class="float-chip chip-one">✦ ألعاب مجانية</span>
+          <span class="float-chip chip-two">مغامرتك تبدأ الآن</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container search-section" id="games">
+      <div class="section-heading">
+        <div><span class="eyebrow">مكتبة الألعاب</span><h2>اختر لعبتك</h2></div>
+        <span class="result-count" id="resultCount">5 ألعاب</span>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="ابحث عن لعبة..." autocomplete="off"></label>
+        <div class="filters" id="categories" aria-label="تصفية حسب التصنيف">
+          <button class="filter active" data-category="all">الكل</button>
+          <button class="filter" data-category="racing">سباق</button>
+          <button class="filter" data-category="strategy">استراتيجية</button>
+          <button class="filter" data-category="adventure">مغامرات</button>
+        </div>
+      </div>
+      <div class="games-grid" id="gamesGrid">
+        <article class="game-card" data-name="supertuxkart سوبر تاكس كارت" data-category="racing">
+          <div class="game-cover cover-racing"><span class="cover-symbol">🏎️</span><span class="cover-tag">سباق</span><span class="cover-title">SUPER<br>TUX KART</span></div>
+          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>SuperTuxKart</h3><p>سباقات كارت ممتعة برسومات ملونة ومنافسات سريعة.</p><a class="download-link" href="https://supertuxkart.net/Download" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+        </article>
+        <article class="game-card" data-name="0 a d zero ad زيرو اي دي" data-category="strategy">
+          <div class="game-cover cover-strategy"><span class="cover-symbol">🏛️</span><span class="cover-tag">استراتيجية</span><span class="cover-title">0 A.D.<br>EMPIRES</span></div>
+          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>0 A.D.</h3><p>ابنِ حضارتك وأدر مواردك وخض معارك تاريخية.</p><a class="download-link" href="https://play0ad.com/download/" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+        </article>
+        <article class="game-card" data-name="openttd open ttd قطارات" data-category="strategy">
+          <div class="game-cover cover-train"><span class="cover-symbol">🚆</span><span class="cover-tag">محاكاة</span><span class="cover-title">OPEN<br>TTD</span></div>
+          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>OpenTTD</h3><p>صمّم شبكة نقل وقطارات ووسّع شركتك عبر المدن.</p><a class="download-link" href="https://www.openttd.org/downloads/openttd-releases/latest.html" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+        </article>
+        <article class="game-card" data-name="luanti minetest لووانتي" data-category="adventure">
+          <div class="game-cover cover-blocks"><span class="cover-symbol">🧱</span><span class="cover-tag">مغامرات</span><span class="cover-title">LUANTI<br>WORLDS</span></div>
+          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>Luanti</h3><p>استكشف عوالم مفتوحة وابنِ وابتكر مع مجتمع اللاعبين.</p><a class="download-link" href="https://www.luanti.org/downloads/" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+        </article>
+        <article class="game-card" data-name="battle for wesnoth wesnoth ويسنوث" data-category="strategy">
+          <div class="game-cover cover-fantasy"><span class="cover-symbol">🐉</span><span class="cover-tag">استراتيجية</span><span class="cover-title">BATTLE FOR<br>WESNOTH</span></div>
+          <div class="game-info"><div class="game-meta"><span>كمبيوتر</span><span>مجانية</span></div><h3>The Battle for Wesnoth</h3><p>استراتيجية خيالية بأبطال وجيوش وحملات متنوعة.</p><a class="download-link" href="https://www.wesnoth.org/downloads/" target="_blank" rel="noopener noreferrer">الموقع الرسمي للتحميل <span>↗</span></a></div>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>لم نعثر على ألعاب مطابقة. جرّب كلمة أخرى.</div>
+    </section>
+
+    <section class="container about-section" id="about">
+      <div class="about-card"><span class="about-icon">✦</span><div><h2>اللعب أسهل عندما يكون آمناً.</h2><p>نساعدك على اكتشاف ألعاب مجانية، ونوجّهك إلى مواقع المطورين الرسمية للحصول على الملفات والتحديثات الأصلية.</p></div><a href="privacy.html">سياسة الخصوصية <span>←</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#"><span class="brand-mark">ل</span><span>لعبة<span class="brand-dot">.</span></span></a><p>© <span id="year"></span> لعبة. جميع الحقوق محفوظة.</p><a href="privacy.html">الخصوصية</a></div><div class="container footer-disclaimer">أسماء الألعاب وعلاماتها التجارية تعود إلى أصحابها. روابط التحميل تقود إلى المواقع الرسمية للمطورين.</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
